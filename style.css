@@ -106,6 +106,57 @@
   cursor: pointer;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.collapsed {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.mobile .header button {
+  border: none;
+  background-color: rgb(59, 112, 226);
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.logo {
+  min-width: 250px;
+}
+
+@media screen and (max-width: 500px) {
+  
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .logo img{
+    margin-left: auto;
+  }
+
+}
+
 /*-------------------------MAIN------------------------------------*/
   
 .main {

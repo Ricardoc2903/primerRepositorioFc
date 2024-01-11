@@ -23,4 +23,12 @@ $(document).ready(function () {
   setInterval(function () {
     $('.floating-button').toggleClass('bell-animation');
   }, 5000);
+
+  //menu desplegable navbar
+  const bMore = document.querySelector('#bMore');
+  const links = document.querySelector('#links');
+  
+  bMore.addEventListener('click', (e) => {
+    links.classList.toggle('collapsed')
+  })
   
