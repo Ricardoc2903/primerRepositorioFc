@@ -22,7 +22,7 @@ $(document).ready(function () {
   // Ejecuta la animación cada 5 segundos
   setInterval(function () {
     $('.floating-button').toggleClass('bell-animation');
-  }, 5000);
+  }, 4000);
 
   //menu desplegable navbar
   const bMore = document.querySelector('#bMore');
@@ -31,4 +31,3 @@ $(document).ready(function () {
   bMore.addEventListener('click', (e) => {
     links.classList.toggle('collapsed')
   })
-  

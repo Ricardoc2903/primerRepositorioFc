@@ -1,8 +1,7 @@
 /**/
 .grid-container{
-  background-color: #fcfcfc;
+  background-color: #f0f0f0;
   font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
   width: 100%; 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -20,21 +19,11 @@
 /*Boton flotante Whatsapp-------------------------------------------*/
 
 .floating-button{
-  font-size: 20px;
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
   position: fixed;
   bottom: 100px;
   right: 20px;
-  background-color: whitesmoke;
-  color: #4aed25;
-  padding: 10px;
-  border-radius: 10px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   transition: all 0.3s ease; /* Agrega una transición suave a todos los cambios */
   z-index: 1000; 
 }
@@ -44,7 +33,6 @@
 }
 
 .floating-button img {
-  margin-left: 8px;
   max-width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
   border-radius: 50px;
 }
@@ -74,13 +62,12 @@
   width: 100%;
   padding: 5px;
   z-index: 1000; 
-  background-color: rgb(59, 112, 226);
+  background-color: #001F3F;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   transition: top 0.3s; /* Agrega una transición suave para el cambio de posición */
-
 }
 
 .logo img{
@@ -102,7 +89,7 @@
 }
 
 .links a:hover{
-  color: aqua;
+  color: #0074E4;
   cursor: pointer;
 }
 
@@ -131,7 +118,7 @@
 
 .mobile .header button {
   border: none;
-  background-color: rgb(59, 112, 226);
+  background-color: #001F3F;
   color: white;
   padding: 15px;
   cursor: pointer;
@@ -176,14 +163,14 @@
 
 .main h1 {
   font-size: 1.5rem;
-  color: rgb(59, 112, 226);
+  color: #4682B4;
   font-weight: bold;
 }
 
 .main p {
   font-size: 1.2rem;
   line-height: 1.4;
-  color: #333;
+  color: #001C2E;
   max-width: 400px; 
 }
 
@@ -207,7 +194,6 @@
   
 .item5{
   grid-area: footer;
-  background-color: rgb(59, 112, 226);
 }
 
 
@@ -222,7 +208,7 @@
 
 .card{
   width: 325px;
-  background-color: #f0f0f0;
+  background-color: #e3e3e3;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 2px 1px 4px rgb(0,0,0,0.2);
@@ -243,12 +229,14 @@
 }
 
 .card-content h3{
-  font-size: 28px;
+  font-size: 1.3rem;
   margin-bottom: 8px;
+  font-weight: bold;
+  color: #4682B4;
 }
 
 .card-content p{
-  color: #666;
+  color: #001C2E;
   font-size: 15px;
   line-height: 1.3;
 }
@@ -288,7 +276,7 @@
   border-radius: 20px;
   text-align: center;
   width: 340px;
-  background-color: #F0FAF1;
+  background-color: #f0f0f0;
 }
 
 .input-group{
@@ -298,12 +286,12 @@
 }
 
 form h2{
-  color: rgb(22, 31, 66);
-  font-size: 35px;
+  color: #001F3F;
+  font-size: 2.2rem;
 }
 
 label{
-  color: rgb(22, 31, 66);
+  color: #001C2E;
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 15px;
@@ -313,9 +301,9 @@ input, textarea{
   padding: 17px 25px;
   border-radius: 25px;
   margin-bottom: 20px;
-  background-color: lightblue;
-  border: 2px solid #F0FAF1;
-  color: rgb(22, 31, 66);
+  background-color: #4682B4;
+  border: 2px solid #cce5fa;
+  color: #001C2E;
 }
 
 textarea{
@@ -323,7 +311,7 @@ textarea{
 }
 
 input::placeholder, textarea::placeholder{
-  color: #5d79a6;
+  color: #001C2E;
 }
 
 .btn{
@@ -331,13 +319,15 @@ input::placeholder, textarea::placeholder{
   color: #ffffff;
   border: 0;
   border-radius: 25px;
-  background-color: #4ca1d9;
-  box-shadow: 0 0 20px rgba(0, 102, 254, 0.4);
+  background-color: #4682B4;
+  box-shadow: 0 0 20px #2993ea7e;
   cursor: pointer;
+  color: #001C2E;
 }
 
 .btn:hover{
-  background-color: #4cc1d9;
+  background-color: #0074E4;
+  font-weight: bold;
 }
 
 /*--------------------------FOOTER-------------------------------------*/
@@ -347,21 +337,23 @@ input::placeholder, textarea::placeholder{
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   color: whitesmoke;
-  background-color: rgb(59, 112, 226);
-  padding: 5px;
+  background-color: #001F3F;
+  padding: 10px;
   text-align: center;
   font-size: 1rem;
+}
+
+.footer h1{
+  font-size: large;
 }
 
 .footer-contact,
 .footer-social,
 .footer-legal{
-  line-height: 1em;
-}
-
-.footer p {
-  font-size: 1rem;
-  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  line-height: 1.3em;
 }
 
 .footer-legal p{
@@ -375,9 +367,12 @@ input::placeholder, textarea::placeholder{
 
 .icons{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+}
+
+.footer a:hover{
+  transform: scale(1.3)
 }
 
 footer a{
@@ -385,6 +380,7 @@ footer a{
   color: white;
 }
 
-footer a:hover{
+.mail a:hover{
   text-transform: uppercase;
+  color: #0074E4;
 }
