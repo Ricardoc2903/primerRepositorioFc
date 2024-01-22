@@ -25,11 +25,16 @@ $(document).ready(function () {
   }, 4000);
 
   //menu desplegable navbar
-  const bMore = document.querySelector('#bMore');
-  const links = document.querySelector('#links');
-  
-  bMore.addEventListener('click', (e) => {
-    links.classList.toggle('collapsed')
+  const nav = document.querySelector("#nav");
+  const abrir = document.querySelector("#abrir");
+  const cerrar = document.querySelector("#cerrar");
+
+  abrir.addEventListener("click", () => {
+      nav.classList.add("visible");
+  })
+
+  cerrar.addEventListener("click", () => {
+      nav.classList.remove("visible");
   })
 
   //Mensaje de forulario
